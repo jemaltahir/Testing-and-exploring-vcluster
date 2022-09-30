@@ -10,7 +10,7 @@ Testing and exploring kubernetes cluster using vcluster. Theg goal is to explore
 - A working kubernetes cluster which have kube-context with access to a Kubernetes `kubectl get namespaces`
 
 ## Setting up a Kubernetes cluster using minikube
-To follow along you can have your own local cluster taht is provisioned using [minikube](https://minikube.sigs.k8s.io/docs/) or [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) clusters.
+To follow along you can have your own local cluster that is provisioned using [minikube](https://minikube.sigs.k8s.io/docs/) or [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) clusters.
 For minikube we are usning kvm2 driver: 
 ```
  minikube status 
