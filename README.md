@@ -1,5 +1,5 @@
 # Testing-and-exploring-vcluster
-Testing and exploring kubernetes cluster using vcluster. Theg goal is to explore and test the vckluster by install vcluster CLI, deploy virtual clusters, run a kubernetes deployment, and learn uses cases.
+Testing and exploring kubernetes cluster using vcluster. Theg goal is to explore and test the vcluster by install vcluster CLI, deploy virtual clusters, run a kubernetes deployment, and learn uses cases.
 
 ## Requirements:
 
