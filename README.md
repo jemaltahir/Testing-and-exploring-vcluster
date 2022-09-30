@@ -22,3 +22,56 @@ For minikube we are usning kvm2 driver:
 Follow the geeting started from the vcluster [web page](https://www.vcluster.com/docs/getting-started/setup)
 
 `vcluster --version`
+
+### Codes used for demo
+```
+# Requirements
+
+kubectl version
+helm version
+vcluster --version
+
+# Check k8s cluster
+kubectl config view
+minikube status 
+minikube start --driver=kvm2 --kubernetes-version v1.22.2
+
+
+kubectl create namespace ns1
+
+vcluster create vcl1 -n ns1
+
+kubectl config view
+kubectl config get-contexts       # display list of contexts
+kubectl config current-context    # display the current-context
+kubectl config use-context minikube # to change context 
+
+kubectl get pods -n ns1 
+kubectl get statefulset -n ns1
+vcluster connect -n ns1 vcl1 -- bash # or portforwarding 
+kubectl get deployments.apps -n ns1 
+kubectl get pods -n ns1 
+kubectl config use-context vcluster_vcl1_ns1_minikube 
+kubectl get namespaces 
+kubectl get pods -n testns 
+kubectl get svc -n testns 
+kubectl get all -n testns 
+kubectl scale deployment --replicas=3
+kubectl scale deployment --replicas=3 -n testns 
+kubectl get deployments.apps -n testns 
+kubectl scale deployment nginx-deployment --replicas=3 -n testns 
+kubectl get deployments.apps -n testns 
+kubectl get pods  -n testns 
+kubectl config use-context minikube 
+kubectl get pods -A
+kubectl get deployments.apps 
+kubectl get pods -A
+
+# Cleaning up
+miniku delete
+rm -rf ~/.minikube/
+rm -rf ~/.kube/
+rm -rf /tmp/3* 
+rm -rf /tmp/minikube*
+ls /tmp/
+```
