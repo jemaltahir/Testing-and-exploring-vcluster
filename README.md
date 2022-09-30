@@ -3,8 +3,10 @@ Testing and exploring kubernetes cluster using vcluster. Theg goal is to explore
 
 ## Requirements:
 
-kubectl client `kubectl version`
-helm v3 client `helm version`
-A working kubernetes cluster which have kube-context with access to a Kubernetes `kubectl get namespaces`
+- kubectl client `kubectl version`
+
+- helm v3 client `helm version`
+
+- A working kubernetes cluster which have kube-context with access to a Kubernetes `kubectl get namespaces`
 
 ##
