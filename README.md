@@ -9,4 +9,5 @@ Testing and exploring kubernetes cluster using vcluster. Theg goal is to explore
 
 - A working kubernetes cluster which have kube-context with access to a Kubernetes `kubectl get namespaces`
 
-##
+### Install the vcluster cli 
+Follow the geeting started from the vcluster [wesite](https://www.vcluster.com/docs/getting-started/setup)
